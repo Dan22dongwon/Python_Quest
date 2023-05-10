@@ -1,3 +1,9 @@
+# Code Peer Review Templete
+
+- 코더 : 박동원
+- 리뷰어 : 백기웅
+
+---
 
 # PRT(PeerReviewTemplate)
 
