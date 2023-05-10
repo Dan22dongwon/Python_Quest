@@ -25,14 +25,12 @@ with open('/content/sample_data/06TheAvengers.txt', 'r') as file:
     temp = line.strip('\n').casefold()
     temp = temp.translate(str.maketrans('', '', string.punctuation))
     temp = ''.join(filter(lambda x: x not in string.punctuation, temp))
-    
     file_line.append(temp)
-file_line
-#파일 출력이 잘 되었습니다.
+  
+file_line  # 파일 출력이 잘 되었습니다.
 
 string.punctuation
-'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
-#문자이외에 기호제거.
+'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'  # 문자이외에 기호제거.
 
 baglist = []
 for line in file_line:
@@ -40,13 +38,11 @@ for line in file_line:
   for i in range(len(words) - 1):
     gram_temp = (words[i], words[i + 1])
     baglist.append(gram_temp)
-baglist
-# 2-gram으로 리스트 작성.
+baglist  # 2-gram으로 리스트 작성.
 
 from collections import Counter
 countdict = Counter(baglist)
-sorted(countdict.items(), key=lambda x: x[1], reverse=True) 
-### 텍스트와 대조하여 빈도수 측정. 
+sorted(countdict.items(), key=lambda x: x[1], reverse=True)  # 텍스트와 대조하여 빈도수 측정. 
 
 </code>
    - Code 에 대한 리뷰어의 Comment 를 남겨주세요
