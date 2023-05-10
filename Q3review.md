@@ -27,7 +27,6 @@ with open('/content/sample_data/06TheAvengers.txt', 'r') as file:
     temp = temp.translate(str.maketrans('', '', string.punctuation))
     temp = ''.join(filter(lambda x: x not in string.punctuation, temp))
     file_line.append(temp)
-  
 file_line  # 파일 출력이 잘 되었습니다.
 
 string.punctuation
