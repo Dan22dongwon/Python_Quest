@@ -17,6 +17,7 @@
 
 ---
 <code>
+  
 import string
 
 file_line = []
@@ -43,8 +44,9 @@ baglist  # 2-gram으로 리스트 작성.
 from collections import Counter
 countdict = Counter(baglist)
 sorted(countdict.items(), key=lambda x: x[1], reverse=True)  # 텍스트와 대조하여 빈도수 측정. 
-
-</code>
+  
+  </code>
+  
    - Code 에 대한 리뷰어의 Comment 를 남겨주세요
 
 1. Quest를 잘 해결한 모범답안 같습니다.
