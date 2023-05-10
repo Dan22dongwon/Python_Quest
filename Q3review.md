@@ -16,7 +16,7 @@
 - [x] 코드가 간결한가요?
 
 ---
-
+<code>
 import string
 
 file_line = []
@@ -28,11 +28,11 @@ with open('/content/sample_data/06TheAvengers.txt', 'r') as file:
     
     file_line.append(temp)
 file_line
-### 파일 출력이 잘 되었습니다.
+#파일 출력이 잘 되었습니다.
 
 string.punctuation
 '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
-###문자이외에 기호제거.
+#문자이외에 기호제거.
 
 baglist = []
 for line in file_line:
@@ -41,13 +41,14 @@ for line in file_line:
     gram_temp = (words[i], words[i + 1])
     baglist.append(gram_temp)
 baglist
-### 2-gram으로 리스트 작성.
+# 2-gram으로 리스트 작성.
 
 from collections import Counter
 countdict = Counter(baglist)
 sorted(countdict.items(), key=lambda x: x[1], reverse=True) 
 ### 텍스트와 대조하여 빈도수 측정. 
-   
+
+</code>
    - Code 에 대한 리뷰어의 Comment 를 남겨주세요
 
 1. Quest를 잘 해결한 모범답안 같습니다.
