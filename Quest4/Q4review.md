@@ -16,7 +16,6 @@
 - [x] 코드가 간결한가요?
 
 ---
-<code>
   
 ## Fish 클래스
   
@@ -81,7 +80,7 @@ Marlin is swimming at 7 m/s
 Bubbles is swimming at 2 m/s
 Gill is swimming at 4 m/s
 
-</code>
+
 ---
 
 
