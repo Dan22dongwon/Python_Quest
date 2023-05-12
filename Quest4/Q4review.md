@@ -45,13 +45,7 @@ def show_fish_movement_generator(fish_list):
     print(i)
     # print(fish_generator(i))
 
-# def show_fish_movement_generator(fish_list):
-#    def fish_movement_generator(fish_list):
-#         for fish in fish_list:
-#             yield print(movement)
-  
-
-show_fish_movement_generator(fish_list)
+  show_fish_movement_generator(fish_list)
   
 # 물고기 리스트
 fish_list = [
