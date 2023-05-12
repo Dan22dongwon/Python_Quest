@@ -1,7 +1,7 @@
 # Code Peer Review Templete
 
-- 코더 : 
-- 리뷰어 : 
+- 코더 : 박동원
+- 리뷰어 : 백기웅
 
 ---
 
@@ -17,7 +17,9 @@
 
 ---
 <code>
+  
 # Fish 클래스
+  
 class Fish:
   def __init__(self, name, speed):
     self.name = name
