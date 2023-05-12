@@ -35,7 +35,7 @@ def show_fish_movement_comprehension(fish_list):
 def show_fish_movement_iterator(fish_list):
   fish_iter = iter(fish_list)
   for i in range(len(fish_list)):
-    fish_iter.__next__().movement()
+    fish_iter.__next__().movement()  # next함수를 이용해 출력. 이런 방법도 있네요. 잘 배웠습니다.
 
 # 제너레이터 사용해서 출력하는 함수
 def show_fish_movement_generator(fish_list):
@@ -45,7 +45,7 @@ def show_fish_movement_generator(fish_list):
     print(i)
     # print(fish_generator(i))
 
-  show_fish_movement_generator(fish_list)
+show_fish_movement_generator(fish_list)
   
 # 물고기 리스트
 fish_list = [
@@ -83,7 +83,7 @@ Gill is swimming at 4 m/s
 1. Fish class 생성으로 fish_list 값들을 접근할 수 있도록 잘 만들어 주셧습니다.
 2. 이후, 컴프리헨션/이터레이터/제너레이터로 출력하는 함수를 정의.
 3. 컴프리헨션/이터레이터 출력결과 성공적입니다.
-4. 다만 제너레이터는 좀더 보안이 필요해 보입니다. 고생하셨습니다.
+4. 다만 제너레이터는 좀 더 보안이 필요해 보입니다. 고생하셨습니다.
 
 # 참고 링크 및 코드 개선 여부
 
