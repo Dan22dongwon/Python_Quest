@@ -16,9 +16,8 @@
 - [x] 코드가 간결한가요?
 
 ---
-  
-## Fish 클래스
-  
+```python
+# Fish 클래스
 class Fish:
   def __init__(self, name, speed):
     self.name = name
@@ -27,18 +26,17 @@ class Fish:
   def movement(self):
     print(f"{self.name} is swimming at {self.speed} m/s")
   
-## 컴프리헨션 사용해서 출력하는 함수
+# 컴프리헨션 사용해서 출력하는 함수
 def show_fish_movement_comprehension(fish_list):
   [i.movement() for i in fish_list]
 
-## 이터레이터 사용해서 출력하는 함수
+# 이터레이터 사용해서 출력하는 함수
 def show_fish_movement_iterator(fish_list):
   fish_iter = iter(fish_list)
   for i in range(len(fish_list)):
     fish_iter.__next__().movement()
 
-## 제너레이터 사용해서 출력하는 함수
-
+# 제너레이터 사용해서 출력하는 함수
 def show_fish_movement_generator(fish_list):
   def fish_generator(obj):
     yield obj.movement()
@@ -48,7 +46,7 @@ def show_fish_movement_generator(fish_list):
 
   show_fish_movement_generator(fish_list)
   
-## 물고기 리스트
+# 물고기 리스트
 fish_list = [
     Fish("Nemo", 3),
     Fish("Dory", 5),
@@ -57,15 +55,14 @@ fish_list = [
     Fish("Gill", 4)
 ]
 
-
-## 물고기들의 움직임 출력
+# 물고기들의 움직임 출력
 print("Using Comprehension:")
 show_fish_movement_comprehension(fish_list)
 
 print("\nUsing Iterator:")
 show_fish_movement_iterator(fish_list)
 
-## 출력결과
+# 출력결과
 Using Comprehension:
 Nemo is swimming at 3 m/s
 Dory is swimming at 5 m/s
@@ -79,8 +76,7 @@ Dory is swimming at 5 m/s
 Marlin is swimming at 7 m/s
 Bubbles is swimming at 2 m/s
 Gill is swimming at 4 m/s
-
-
+```
 ---
 
 
