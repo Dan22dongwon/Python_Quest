@@ -16,7 +16,9 @@
 - [x] 코드가 간결한가요?
 
 ---
-```python
+
+```c++
+
 # Fish 클래스
 class Fish:
   def __init__(self, name, speed):
